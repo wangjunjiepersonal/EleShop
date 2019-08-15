@@ -106,7 +106,7 @@
 			},
 			//控制购物车弹窗购买列表
 			listShow () {
-				if (this.totalCount == 0) {
+				if (this.totalCount <= 0) {
 					this.isShow = false
 					return false
 				}

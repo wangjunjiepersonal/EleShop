@@ -73,7 +73,7 @@ export default {
 		commit(RECEIVE_USER_INFO,{userInfo})
 	},
 	
-	//异步获取用户信息
+	//异步获取用户信息  会话
 	async getUserInfo({commit}) {
 		const result = await reqUser()
 		if (result.code === 0) {
